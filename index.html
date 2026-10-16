@@ -268,12 +268,12 @@ button:focus-visible{outline:2px solid var(--gold-2);outline-offset:2px}
   /* no downward gold glow under the button: Safari's bottom bar would cut it into a band */
   .cta{box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
   /* keep the side glows clear of the bottom fade so it never cuts them into a band */
-  .orb{transform:translateY(calc(-1 * (var(--bot) + 190px)))}
+  .orb{transform:translateY(calc(-1 * (var(--bot) + 110px)))}
   /* fade the warm glow out toward the top so it meets Safari's flat status-bar tint without a seam */
   .glow{-webkit-mask-image:linear-gradient(to bottom,transparent 160px,#000 330px);mask-image:linear-gradient(to bottom,transparent 160px,#000 330px)}
   .scroll{padding-top:calc(var(--top) + 8px);padding-bottom:calc(var(--bot) + 150px)}
   .bnav{padding-bottom:calc(var(--bot) + 12px)}
-  .bnav::before{height:calc(var(--bot) + 190px);background:linear-gradient(to bottom,rgba(15,38,29,0) 0%,rgba(15,38,29,.35) 22%,rgba(15,38,29,.7) 42%,rgba(15,38,29,.92) 58%,var(--screen) 72%)}
+  .bnav::before{height:calc(var(--bot) + 110px);background:linear-gradient(to bottom,rgba(15,38,29,0) 0%,rgba(15,38,29,.5) 30%,rgba(15,38,29,.85) 55%,var(--screen) 75%)}
   .intro{padding-top:4px}
   .hero{width:100%;height:auto;aspect-ratio:359/392;max-width:100%}
   .introBody{width:100%}
