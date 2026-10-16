@@ -265,6 +265,8 @@ button:focus-visible{outline:2px solid var(--gold-2);outline-offset:2px}
   .fit{width:100%;height:100%;transform:none!important}
   .phone{width:100%;height:100%;border-radius:0;box-shadow:none}
   .status,.home,.under{display:none}
+  /* fade the warm glow out toward the top so it meets Safari's flat status-bar tint without a seam */
+  .glow{-webkit-mask-image:linear-gradient(to bottom,transparent 160px,#000 330px);mask-image:linear-gradient(to bottom,transparent 160px,#000 330px)}
   .scroll{padding-top:calc(var(--top) + 8px);padding-bottom:calc(var(--bot) + 104px)}
   .bnav{padding-bottom:calc(var(--bot) + 12px)}
   .bnav::before{height:calc(var(--bot) + 120px)}
